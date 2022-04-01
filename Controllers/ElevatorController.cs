@@ -42,6 +42,21 @@ namespace TodoApi.Controllers
             return elevator;
         }
 
+        // Retrieving a list of Elevators that are not in operation at the time of the request
+        // GET: api/invalid
+        [HttpGet("invalid")]
+        public async Task<ActionResult<IEnumerable<Elevator>>> GetOfflineElevators()
+        {
+            List<Elevator> allElevators = await _context.elevators.ToListAsync();
+            List<Elevator> offlineElevators = new List<Elevator>();
+            foreach (Elevator elevator in allElevators){
+                if (elevator.status != "valid"){
+                    offlineElevators.Add(elevator);
+                }
+            }
+            return offlineElevators;
+        }
+
         // PUT: api/Elevator/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutElevator(long id, Elevator elevator)
