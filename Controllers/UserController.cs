@@ -43,7 +43,6 @@ namespace TodoApi.Controllers
         }
 
         // PUT: api/User/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUser(long id, User user)
         {
@@ -71,17 +70,6 @@ namespace TodoApi.Controllers
             }
 
             return NoContent();
-        }
-
-        // POST: api/User
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<User>> PostUser(User user)
-        {
-            _context.users.Add(user);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetUser", new { id = user.id }, user);
         }
 
         private bool UserExists(long id)

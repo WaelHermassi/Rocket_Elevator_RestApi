@@ -42,36 +42,14 @@ namespace TodoApi.Controllers
             return lead;
         }
 
+        // GET: api/Lead/email
         [HttpGet("email")]
         public async Task<ActionResult<IEnumerable<Lead>>> GetLeadEmails()
         {
-            DateTime today = DateTime.Today;
-            DateTime dateLimit = today.AddDays(-30);
-
-            List<Lead> leads = await _context.leads.ToListAsync();
-            List<Lead> goodLeads = new List<Lead>();
-
-            List<Customer> customers = await _context.customers.ToListAsync();
-
-            List<User> users = await _context.users.ToListAsync();
-
-            foreach (Lead lead in leads)
-            {
-                foreach (User user in users)
-                {
-                    foreach (Customer customer in user.Customers)
-                    {
-                        if (user.email == lead.email)
-                        {
-                            if (DateTime.Now > dateLimit)
-                            {
-                                goodLeads.Add(lead);
-                            }
-                        }
-                    }
-                }
-            }
-            return goodLeads;
+            var lead = await _context.leads
+            .Where(l => l.date_of_contact_request == null && (l.created_at >= DateTime.Now.AddDays(-30) && l.created_at
+             <= DateTime.Now) && !_context.customers.Any(c => c.email_of_the_company_contact == l.email)).ToListAsync();
+             return lead;
         }
 
         private bool LeadExists(long id)

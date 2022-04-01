@@ -45,41 +45,23 @@ namespace TodoApi.Controllers
         [HttpGet("intervention")]
         public async Task<ActionResult<IEnumerable<Building>>> GetInterventionBuildings()
         {
-            // var building = await _context.buildings.FindAsync(id);
-            // var battery = await _context.batteries.FindAsync(status);
-            // var column = await _context.columns.FindAsync(status);
-            // var elevator = await _context.elevators.FindAsync(status);
+            await _context.batteries.ToListAsync();
+            await _context.elevators.ToListAsync();
+            await _context.columns.ToListAsync();
+            List<Building> buildings = await _context.buildings.ToListAsync();
 
             List<Battery> interventionBatteries = new List<Battery>();
-            List<Battery> batteries = await _context.batteries.ToListAsync();
-
             List<Column> interventionColumns = new List<Column>();
-            List<Column> columns = await _context.columns.ToListAsync();
-
             List<Elevator> interventionElevators = new List<Elevator>();
-            List<Elevator> elevators = await _context.elevators.ToListAsync();
-
             List<Building> interventionBuildings = new List<Building>();
-            List<Building> buildings = await _context.buildings.ToListAsync();
-            //_context.buildings.
 
             // Searching for a status "intervention"
             foreach (Building building in buildings)
             {
-                //Console.WriteLine(building.Batteries.Count);
-                // List<Battery> interventionBatteries = _context.batteries.Where(b => b.building_id == building.id && b.status == "Intervention").ToList();
-                
-                // if(interventionBatteries.Count > 0 && !interventionBuildings.Contains(building)) {
-                //     interventionBuildings.Add(building);
-                //     Console.WriteLine("Building #" + building.id + " added");
-                // }
-
                 foreach (Battery battery in building.Batteries)
                 {
-                    Console.WriteLine("Building #" + building.id + " battery #" + battery.id);
-                    if (battery.status == "Intervention" && !interventionBuildings.Contains(building))
                     {
-                        interventionBuildings.Add(building); 
+                        interventionBuildings.Add(building);
                     }
                     foreach (Column column in battery.Columns)
                     {
@@ -96,9 +78,7 @@ namespace TodoApi.Controllers
                         }
                     }
                 }
-
             }
-
             return interventionBuildings;
         }
 
