@@ -39,7 +39,7 @@ A MySQL Database
 * How to run the program
 * Start your MySQL
 * run dotnet in correct directory
-* Go to PostMan -> WorkSpace -> Collections -> url + route
+* Go to PostMan -> WorkSpace -> Collections -> https://superrocketelevators.azurewebsites.net + route
 * See routes Below
 
 ```
