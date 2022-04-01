@@ -81,6 +81,10 @@ https://github.com/WaelHermassi
 * 1.0.0
     * Initial Release
 
+## Postman Collection
+
+https://www.getpostman.com/collections/1b0bdc09588fa3e30fbd
+
 ## CodeBoxx
 
 Project for Week 7 of Odyssey
