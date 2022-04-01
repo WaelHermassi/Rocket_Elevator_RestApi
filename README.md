@@ -52,9 +52,10 @@ Possible routes:
 * /building/intervention
 * /lead
 * /lead/email
+* /elevator
+* /elevator/invalid
 * /battery
 * /column
-* /elevator
 
 ## Authors
 
