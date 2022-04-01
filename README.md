@@ -1,6 +1,5 @@
 # Rocket_Elevators_REST_API
 
-Simple overview of use/purpose.
 
 ## Description
 
