@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brian\\CodeBoxx\\Week7Odyssey\\RocketElevatorsRestApi\\RocketElevatorsRestApi.csproj": {}
+    "/Users/andrereyes/school-projects/Rocket_Elevators_REST_API/RocketElevatorsRestApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brian\\CodeBoxx\\Week7Odyssey\\RocketElevatorsRestApi\\RocketElevatorsRestApi.csproj": {
+    "/Users/andrereyes/school-projects/Rocket_Elevators_REST_API/RocketElevatorsRestApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brian\\CodeBoxx\\Week7Odyssey\\RocketElevatorsRestApi\\RocketElevatorsRestApi.csproj",
+        "projectUniqueName": "/Users/andrereyes/school-projects/Rocket_Elevators_REST_API/RocketElevatorsRestApi.csproj",
         "projectName": "RocketElevatorsRestApi",
-        "projectPath": "C:\\Users\\brian\\CodeBoxx\\Week7Odyssey\\RocketElevatorsRestApi\\RocketElevatorsRestApi.csproj",
-        "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brian\\CodeBoxx\\Week7Odyssey\\RocketElevatorsRestApi\\obj\\",
+        "projectPath": "/Users/andrereyes/school-projects/Rocket_Elevators_REST_API/RocketElevatorsRestApi.csproj",
+        "packagesPath": "/Users/andrereyes/.nuget/packages/",
+        "outputPath": "/Users/andrereyes/school-projects/Rocket_Elevators_REST_API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/andrereyes/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
         }
       }
     }
