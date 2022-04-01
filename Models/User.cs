@@ -23,9 +23,7 @@ namespace DotNetCoreMySQL.Models
         public string? first_name { get; set; }
         public string? last_name { get; set; }
 
-        // [ForeignKey("customer_id")]
         public virtual ICollection<Customer> Customers { get; set; }
-        // [ForeignKey("employee_id")]
         public virtual ICollection<Employee> Employees { get; set; }
     }
 }

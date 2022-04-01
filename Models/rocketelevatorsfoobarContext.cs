@@ -16,11 +16,7 @@ namespace DotNetCoreMySQL.Models
             base(options)
         {
         }
-
-        // public virtual DbSet<ActiveStorageAttachment> ActiveStorageAttachments { get; set; } = null!;
-        // public virtual DbSet<ActiveStorageBlob> ActiveStorageBlobs { get; set; } = null!;
         public virtual DbSet<Address> addresses { get; set; } = null!;
-        // public virtual DbSet<ArInternalMetadatum> ArInternalMetadata { get; set; } = null!;
         public virtual DbSet<Battery> batteries { get; set; } = null!;
         public virtual DbSet<Building> buildings { get; set; } = null!;
         public virtual DbSet<BuildingDetail> buildingDetails { get; set; } = null!;
@@ -35,17 +31,3 @@ namespace DotNetCoreMySQL.Models
 
         }
 }
-
-// dotnet aspnet-codegenerator controller -name BatteryController -async -api -m Battery -dc rocketelevatorsfoobarContext -outDir Controllers
-
-// dotnet aspnet-codegenerator controller -name BuildingController -async -api -m Building -dc rocketelevatorsfoobarContext -outDir Controllers
-
-// dotnet aspnet-codegenerator controller -name ColumnController -async -api -m Column -dc rocketelevatorsfoobarContext -outDir Controllers
-
-// dotnet aspnet-codegenerator controller -name ElevatorController -async -api -m Elevator -dc rocketelevatorsfoobarContext -outDir Controllers
-
-// dotnet aspnet-codegenerator controller -name LeadController -async -api -m Lead -dc rocketelevatorsfoobarContext -outDir Controllers
-
-// dotnet aspnet-codegenerator controller -name UserController -async -api -m User -dc rocketelevatorsfoobarContext -outDir Controllers
-
-// dotnet aspnet-codegenerator controller -name CustomerController -async -api -m Customer -dc rocketelevatorsfoobarContext -outDir Controllers

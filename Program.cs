@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using DotNetCoreMySQL.Models;
-// using TodoApi.Models;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,10 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-// builder.Services.AddDbContext<DbContext>(options =>
-// {
-//     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
-// });
+
 
 builder.Services.AddDbContext<rocketelevatorsfoobarContext>(
     dbContextOptions => dbContextOptions

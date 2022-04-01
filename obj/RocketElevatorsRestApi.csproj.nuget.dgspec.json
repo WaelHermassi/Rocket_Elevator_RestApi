@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\brian\\CodeBoxx\\Week7Odyssey\\RocketElevatorsRestApi\\RocketElevatorsRestApi.csproj": {}
+    "C:\\Users\\brian\\CodeBoxx\\Week7Odyssey\\RocketElevatorsRestApi\\RocketElevatorsRestApi.csproj": {}
   },
   "projects": {
-    "c:\\Users\\brian\\CodeBoxx\\Week7Odyssey\\RocketElevatorsRestApi\\RocketElevatorsRestApi.csproj": {
+    "C:\\Users\\brian\\CodeBoxx\\Week7Odyssey\\RocketElevatorsRestApi\\RocketElevatorsRestApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\brian\\CodeBoxx\\Week7Odyssey\\RocketElevatorsRestApi\\RocketElevatorsRestApi.csproj",
+        "projectUniqueName": "C:\\Users\\brian\\CodeBoxx\\Week7Odyssey\\RocketElevatorsRestApi\\RocketElevatorsRestApi.csproj",
         "projectName": "RocketElevatorsRestApi",
-        "projectPath": "c:\\Users\\brian\\CodeBoxx\\Week7Odyssey\\RocketElevatorsRestApi\\RocketElevatorsRestApi.csproj",
+        "projectPath": "C:\\Users\\brian\\CodeBoxx\\Week7Odyssey\\RocketElevatorsRestApi\\RocketElevatorsRestApi.csproj",
         "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\brian\\CodeBoxx\\Week7Odyssey\\RocketElevatorsRestApi\\obj\\",
+        "outputPath": "C:\\Users\\brian\\CodeBoxx\\Week7Odyssey\\RocketElevatorsRestApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config"
