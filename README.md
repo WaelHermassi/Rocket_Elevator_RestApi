@@ -83,7 +83,7 @@ https://github.com/WaelHermassi
 
 ## Postman Collection
 
-https://www.getpostman.com/collections/59bde7542054d31bd9da
+https://www.getpostman.com/collections/31a20fbdfbe03974d914
 
 ## CodeBoxx
 
