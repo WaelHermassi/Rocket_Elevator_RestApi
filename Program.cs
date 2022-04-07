@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 
-builder.Services.AddDbContext<rocketelevatorsfoobarContext>(
+builder.Services.AddDbContext<waelContext>(
     dbContextOptions => dbContextOptions
         .UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
         // The following three options help with debugging, but should

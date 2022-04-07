@@ -9699,6 +9699,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Microsoft.EntityFrameworkCore >= 6.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.3",
       "Microsoft.EntityFrameworkCore.InMemory >= 6.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.3",
@@ -9708,19 +9709,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/andrereyes/.nuget/packages/": {}
+    "C:\\Users\\WAEL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/andrereyes/school-projects/Rocket_Elevators_REST_API/RocketElevatorsRestApi.csproj",
+      "projectUniqueName": "C:\\Users\\WAEL\\Documents\\CodeBox\\week9\\Rocket_Elevators_REST_API\\RocketElevatorsRestApi.csproj",
       "projectName": "RocketElevatorsRestApi",
-      "projectPath": "/Users/andrereyes/school-projects/Rocket_Elevators_REST_API/RocketElevatorsRestApi.csproj",
-      "packagesPath": "/Users/andrereyes/.nuget/packages/",
-      "outputPath": "/Users/andrereyes/school-projects/Rocket_Elevators_REST_API/obj/",
+      "projectPath": "C:\\Users\\WAEL\\Documents\\CodeBox\\week9\\Rocket_Elevators_REST_API\\RocketElevatorsRestApi.csproj",
+      "packagesPath": "C:\\Users\\WAEL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\WAEL\\Documents\\CodeBox\\week9\\Rocket_Elevators_REST_API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/andrereyes/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\WAEL\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -9744,6 +9745,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.3, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -9789,7 +9794,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-
+using System.Text.Json.Serialization;
+using System.Text.Json;
 namespace DotNetCoreMySQL.Models
 {
     public partial class User
@@ -12,16 +13,16 @@ namespace DotNetCoreMySQL.Models
             Employees = new HashSet<Employee>();
         }
 
-        public long id { get; set; }
-        public string email { get; set; } = null!;
-        public string encrypted_password { get; set; } = null!;
-        public string? reset_password_token { get; set; }
-        public DateTime? reset_password_sent_at { get; set; }
-        public DateTime? remember_created_at { get; set; }
-        public DateTime created_at { get; set; }
-        public DateTime updated_at { get; set; }
-        public string? first_name { get; set; }
-        public string? last_name { get; set; }
+        public long Id { get; set; }
+        public string Email { get; set; } = null!;
+        public string EncryptedPassword { get; set; } = null!;
+        public string? ResetPasswordToken { get; set; }
+        public DateTime? ResetPasswordSentAt { get; set; }
+        public DateTime? RememberCreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
 
         public virtual ICollection<Customer> Customers { get; set; }
         public virtual ICollection<Employee> Employees { get; set; }

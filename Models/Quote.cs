@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-
+using System.Text.Json.Serialization;
+using System.Text.Json;
 namespace DotNetCoreMySQL.Models
 {
     public partial class Quote
@@ -26,5 +27,6 @@ namespace DotNetCoreMySQL.Models
         public DateTime UpdatedAt { get; set; }
         public string? CompanyName { get; set; }
         public string? Email { get; set; }
+        public int? EstimatedElev { get; set; }
     }
 }

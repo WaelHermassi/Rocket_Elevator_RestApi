@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-
+using System.Text.Json.Serialization;
+using System.Text.Json;
 namespace DotNetCoreMySQL.Models
 {
     public partial class Address
@@ -24,6 +25,7 @@ namespace DotNetCoreMySQL.Models
         public string? Notes { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
+        public string? State { get; set; }
 
         public virtual ICollection<Building> Buildings { get; set; }
         public virtual ICollection<Customer> Customers { get; set; }
