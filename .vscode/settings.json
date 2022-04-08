@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\net6.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/9177872a-6c40-49b7-ab6c-878146f8f141/resourceGroups/DefaultResourceGroup-CCAN/providers/Microsoft.Web/sites/RockertWaelAPI"
+}
