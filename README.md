@@ -3,16 +3,10 @@
 .NET Core 6 Rest API
 
 ## Description
+-GET: Returns all fields of all intervention Request records that do not have a start date and are in "Pending" status.
+-PUT: Change the status of the intervention request to "InProgress" and add a start date and time (Timestamp).
+-PUT: Change the status of the request for action to "Completed" and add an end date and time (Timestamp).
 
-- Retrieving the current status of a specific Battery
-- Changing the status of a specific Battery
-- Retrieving the current status of a specific Column
-- Changing the status of a specific Column
-- Retrieving the current status of a specific Elevator
-- Changing the status of a specific Elevator
-- Retrieving a list of Elevators that are not in operation at the time of the request
-- Retrieving a list of Buildings that contain at least one battery, column or elevator requiring intervention
-- Retrieving a list of Leads created in the last 30 days who have not yet become customers.
 
 
 ## Getting Started
@@ -48,35 +42,10 @@ dotnet run
 ```
 
 Possible routes:
-* /building
-* /building/intervention
-* /lead
-* /lead/email
-* /elevator
-* /elevator/invalid
-* /battery
-* /column
+* /intervention
 
-## Authors
 
-Contributors names and contact info
-
-Brian Nieckarz
-https://github.com/BrianNieckarz
-
-Marc-Andre Ramirez
-https://github.com/dremangry
-
-Felicia Hartono
-https://github.com/dremangry/Rocket_Elevators_API/commits?author=coder02603
-
-David Pelletier
-https://github.com/TheNobleTruth
-
-WaelHermassi
-https://github.com/WaelHermassi
-
-## Version History
+# Version History
 
 * 1.0.0
     * Initial Release
