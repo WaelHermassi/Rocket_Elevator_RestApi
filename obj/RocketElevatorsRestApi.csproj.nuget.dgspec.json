@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\WAEL\\Documents\\CodeBox\\week9\\Rocket_Elevators_REST_API\\RocketElevatorsRestApi.csproj": {}
+    "/mnt/c/Users/WAEL/Documents/CodeBox/week9/Rocket_Elevators_REST_API/RocketElevatorsRestApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\WAEL\\Documents\\CodeBox\\week9\\Rocket_Elevators_REST_API\\RocketElevatorsRestApi.csproj": {
+    "/mnt/c/Users/WAEL/Documents/CodeBox/week9/Rocket_Elevators_REST_API/RocketElevatorsRestApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WAEL\\Documents\\CodeBox\\week9\\Rocket_Elevators_REST_API\\RocketElevatorsRestApi.csproj",
+        "projectUniqueName": "/mnt/c/Users/WAEL/Documents/CodeBox/week9/Rocket_Elevators_REST_API/RocketElevatorsRestApi.csproj",
         "projectName": "RocketElevatorsRestApi",
-        "projectPath": "C:\\Users\\WAEL\\Documents\\CodeBox\\week9\\Rocket_Elevators_REST_API\\RocketElevatorsRestApi.csproj",
-        "packagesPath": "C:\\Users\\WAEL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WAEL\\Documents\\CodeBox\\week9\\Rocket_Elevators_REST_API\\obj\\",
+        "projectPath": "/mnt/c/Users/WAEL/Documents/CodeBox/week9/Rocket_Elevators_REST_API/RocketElevatorsRestApi.csproj",
+        "packagesPath": "/home/wael/.nuget/packages/",
+        "outputPath": "/mnt/c/Users/WAEL/Documents/CodeBox/week9/Rocket_Elevators_REST_API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\WAEL\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/wael/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -87,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }
