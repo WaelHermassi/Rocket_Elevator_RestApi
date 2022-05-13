@@ -25,34 +25,46 @@ namespace RocketElevatorsRestApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Employee>>> GetEmployee()
         {
-            return await _context.Employee.ToListAsync();
+            return await _context.employees.ToListAsync();
         }
-
+        
         // GET: api/Employee/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Employee>> GetEmployee(long id)
-        {
-            var employee = await _context.Employee.FindAsync(id);
+        // [HttpGet("{id}")]
+        // public async Task<ActionResult<Employee>> GetEmployees(long id)
+        // {
+        //     var employees = await _context.employees.FindAsync(id);
 
-            if (employee == null)
+        //     if (employees == null)
+        //     {
+        //         return NotFound();
+        //     }
+
+        //     return employees;
+        // }
+        [HttpGet("{employee_email}")]
+        public ActionResult<List<Employee>> FindEmployee_Email(string employee_email)
+        {
+            var email = _context.employees.Where(e => e.email == employee_email).ToList();
+
+            if (email.Count == 0)
             {
                 return NotFound();
             }
 
-            return employee;
+            return (email);
         }
 
         // PUT: api/Employee/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutEmployee(long id, Employee employee)
+        public async Task<IActionResult> PutEmployee(long id, Employee employees)
         {
-            if (id != employee.Id)
+            if (id != employees.id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(employee).State = EntityState.Modified;
+            _context.Entry(employees).State = EntityState.Modified;
 
             try
             {
@@ -76,25 +88,25 @@ namespace RocketElevatorsRestApi.Controllers
         // POST: api/Employee
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Employee>> PostEmployee(Employee employee)
+        public async Task<ActionResult<Employee>> PostEmployee(Employee employees)
         {
-            _context.Employee.Add(employee);
+            _context.employees.Add(employees);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetEmployee", new { id = employee.Id }, employee);
+            return CreatedAtAction("GetEmployee", new { id = employees.id }, employees);
         }
 
         // DELETE: api/Employee/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEmployee(long id)
         {
-            var employee = await _context.Employee.FindAsync(id);
-            if (employee == null)
+            var employees = await _context.employees.FindAsync(id);
+            if (employees == null)
             {
                 return NotFound();
             }
 
-            _context.Employee.Remove(employee);
+            _context.employees.Remove(employees);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -102,7 +114,7 @@ namespace RocketElevatorsRestApi.Controllers
 
         private bool EmployeeExists(long id)
         {
-            return _context.Employee.Any(e => e.Id == id);
+            return _context.employees.Any(employees => employees.id == id);
         }
     }
 }

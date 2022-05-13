@@ -7,20 +7,20 @@ namespace DotNetCoreMySQL.Models
 {
     public partial class Elevator
     {
-        public long Id { get; set; }
-        public long? ColumnId { get; set; }
-        public string? SerialNumber { get; set; }
-        public string? Model { get; set; }
-        public string? Status { get; set; }
-        public DateOnly? DateOfCommissioning { get; set; }
-        public DateOnly? DateOfLastInspection { get; set; }
-        public byte[]? CertificateOfInspection { get; set; }
-        public string? Information { get; set; }
-        public string? Notes { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
-        public string? Typing { get; set; }
+        public long id { get; set; }
+        public long? column_id { get; set; }
+        public string? serial_number { get; set; }
+        public string? model { get; set; }
+        public string? status { get; set; }
+        public DateTime? date_of_commissioning { get; set; }
+        public DateTime? date_of_last_inspection { get; set; }
+        public byte[]? certificate_of_inspection { get; set; }
+        public string? information { get; set; }
+        public string? notes { get; set; }
+        public DateTime created_at { get; set; }
+        public DateTime updated_at { get; set; }
+        public string? typing { get; set; }
 
-        public virtual Column? Column { get; set; }
+        // public virtual Column? column { get; set; }
     }
 }

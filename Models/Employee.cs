@@ -9,16 +9,18 @@ namespace DotNetCoreMySQL.Models
     {
         public Employee()
         {
-            Batteries = new HashSet<Battery>();
+            batteries = new HashSet<Battery>();
         }
 
-        public long Id { get; set; }
-        public string? Title { get; set; }
-        public long? UserId { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
-
-        public virtual User? User { get; set; }
-        public virtual ICollection<Battery> Batteries { get; set; }
+        public long id { get; set; }
+        public string? title { get; set; }
+        // public long? user_id { get; set; }
+        public DateTime created_at { get; set; }
+        public DateTime updated_at { get; set; }
+        public string? email { get; set; }
+        public string? first_name { get; set; }
+        public string? last_name { get; set; }
+        // public virtual User? users { get; set; }
+        public virtual ICollection<Battery> batteries { get; set; }
     }
 }
